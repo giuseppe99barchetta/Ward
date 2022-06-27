@@ -105,7 +105,7 @@ function sendUsageRequest()
         }
     }
 
-    usageXHR.open("GET", "/api/usage");
+    usageXHR.open("GET", "/ward/api/usage");
     usageXHR.send();
 }
 
@@ -132,7 +132,7 @@ function sendInfoRequest()
         }
     }
 
-    infoXHR.open("GET", "/api/info");
+    infoXHR.open("GET", "/ward/api/info");
     infoXHR.send();
 }
 

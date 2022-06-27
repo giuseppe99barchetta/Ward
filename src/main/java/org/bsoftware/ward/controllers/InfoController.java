@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @version 1.0.1
  */
 @RestController
-@RequestMapping(value = "/api/info")
+@RequestMapping(value = "/ward/api/info")
 public class InfoController
 {
     /**
