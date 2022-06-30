@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @version 1.0.2
  */
 @Controller
-@RequestMapping(value = "/ward/error")
+@RequestMapping(value = "/error")
 public class ErrorController implements org.springframework.boot.web.servlet.error.ErrorController
 {
     /**

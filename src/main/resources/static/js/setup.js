@@ -88,7 +88,7 @@ function setAlertStyle(styleName)
  */
 function sendSetupRequest()
 {
-    setupXHR.open("POST", "/ward/api/setup");
+    setupXHR.open("POST", "/api/setup");
     setupXHR.setRequestHeader("Content-Type", "application/json");
 
     setupXHR.onreadystatechange = function()

@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @version 1.0.1
  */
 @RestController
-@RequestMapping(value = "/ward/api/usage")
+@RequestMapping(value = "/api/usage")
 public class UsageController
 {
     /**

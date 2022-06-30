@@ -15,7 +15,7 @@ import javax.validation.Valid;
  * @version 1.0.1
  */
 @RestController
-@RequestMapping(value = "/ward/api/setup")
+@RequestMapping(value = "/api/setup")
 public class SetupController
 {
     /**
