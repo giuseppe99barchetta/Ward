@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @version 1.0.1
  */
 @RestController
-@RequestMapping(value = "/")
+@RequestMapping(value = "/api/info")
 public class InfoController
 {
     /**
