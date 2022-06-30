@@ -49,9 +49,9 @@ public class SetupService
         {
             File file = new File(Ward.SETUP_FILE_PATH);
 
-            putInIniFile(file, "setup", "serverName", setupDto.getServerName());
-            putInIniFile(file, "setup", "theme", setupDto.getTheme());
-            putInIniFile(file, "setup", "port", setupDto.getPort());
+            putInIniFile(file, "ward/setup", "serverName", setupDto.getServerName());
+            putInIniFile(file, "ward/setup", "theme", setupDto.getTheme());
+            putInIniFile(file, "ward/setup", "port", setupDto.getPort());
 
             Ward.restart();
         }

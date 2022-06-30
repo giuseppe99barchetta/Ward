@@ -98,7 +98,7 @@ function sendSetupRequest()
             if (this.status == 200)
             {
                 submit.value = "LOADING";
-                window.location = "http://" + window.location.hostname + ":" + port.value;
+                window.location = "http://" + window.location.hostname + ":" + port.value + "/ward";
             }
             else
             {

@@ -39,12 +39,12 @@ public class IndexService
     {
         if (Ward.isFirstLaunch())
         {
-            return "setup";
+            return "ward/setup";
         }
 
         model.addAttribute("info", infoService.getInfo());
         model.addAttribute("theme", utilitiesComponent.getThemeName());
 
-        return "index";
+        return "ward/index";
     }
 }

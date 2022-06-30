@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import oshi.SystemInfo;
 import oshi.hardware.*;
 import oshi.software.os.OperatingSystem;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -104,6 +105,7 @@ public class InfoService
         int coreCount = centralProcessor.getLogicalProcessorCount();
         processorDto.setCoreCount(coreCount + ((coreCount > 1) ? " Cores" : " Core"));
         processorDto.setClockSpeed(getConvertedFrequency(centralProcessor.getCurrentFreq()));
+        processorDto.setTemperature(String.valueOf(systemInfo.getHardware().getSensors().getCpuTemperature()) + "°");
 
         String BitDepthPrefix = centralProcessor.getProcessorIdentifier().isCpu64bit() ? "64" : "32";
         processorDto.setBitDepth(BitDepthPrefix + "-bit");
@@ -214,7 +216,7 @@ public class InfoService
         SetupDto setupDto = new SetupDto();
         File file = new File(Ward.SETUP_FILE_PATH);
 
-        setupDto.setServerName(utilitiesComponent.getFromIniFile(file, "setup", "serverName"));
+        setupDto.setServerName(utilitiesComponent.getFromIniFile(file, "ward/setup", "serverName"));
 
         return setupDto;
     }

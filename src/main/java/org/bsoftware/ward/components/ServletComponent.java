@@ -36,7 +36,7 @@ public class ServletComponent implements WebServerFactoryCustomizer<TomcatServle
             try
             {
                 File file = new File(Ward.SETUP_FILE_PATH);
-                tomcatServletWebServerFactory.setPort(Integer.parseInt(utilitiesComponent.getFromIniFile(file, "setup", "port")));
+                tomcatServletWebServerFactory.setPort(Integer.parseInt(utilitiesComponent.getFromIniFile(file, "ward/setup", "port")));
             }
             catch (IOException exception)
             {

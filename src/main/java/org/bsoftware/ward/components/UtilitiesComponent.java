@@ -44,6 +44,6 @@ public class UtilitiesComponent
      */
     public String getThemeName() throws IOException
     {
-        return getFromIniFile(new File(Ward.SETUP_FILE_PATH), "setup", "theme");
+        return getFromIniFile(new File(Ward.SETUP_FILE_PATH), "ward/setup", "theme");
     }
 }

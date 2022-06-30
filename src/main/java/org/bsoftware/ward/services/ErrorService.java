@@ -34,10 +34,10 @@ public class ErrorService
     {
         if (Ward.isFirstLaunch())
         {
-            return "setup";
+            return "ward/setup";
         }
 
         model.addAttribute("theme", utilitiesComponent.getThemeName());
-        return "error/404";
+        return "ward/error/404";
     }
 }

@@ -62,6 +62,6 @@ public class ControllerExceptionHandler
     {
         model.addAttribute("theme", utilitiesComponent.getThemeName());
 
-        return "error/500";
+        return "ward/error/500";
     }
 }
