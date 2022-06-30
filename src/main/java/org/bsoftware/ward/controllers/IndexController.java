@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @version 1.0.2
  */
 @Controller
-@RequestMapping(value = "/")
+@RequestMapping(value = "/ward")
 public class IndexController
 {
     /**
