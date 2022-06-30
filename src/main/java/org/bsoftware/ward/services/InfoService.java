@@ -105,7 +105,7 @@ public class InfoService
         int coreCount = centralProcessor.getLogicalProcessorCount();
         processorDto.setCoreCount(coreCount + ((coreCount > 1) ? " Cores" : " Core"));
         processorDto.setClockSpeed(getConvertedFrequency(centralProcessor.getCurrentFreq()));
-        processorDto.setTemperature(String.valueOf(systemInfo.getHardware().getSensors().getCpuTemperature()) + "°");
+        processorDto.setTemperature(systemInfo.getHardware().getSensors().getCpuTemperature() + "°");
 
         String BitDepthPrefix = centralProcessor.getProcessorIdentifier().isCpu64bit() ? "64" : "32";
         processorDto.setBitDepth(BitDepthPrefix + "-bit");
